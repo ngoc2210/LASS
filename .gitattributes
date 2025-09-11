@@ -15,21 +15,21 @@
 *.md              text eol=lf
 
 # Script files
-*.sh     text eol=lf
+*.sh              text eol=lf
 
 # Windows-only scripts
-*.bat    text eol=crlf
-*.cmd    text eol=crlf
+*.bat             text eol=crlf
+*.cmd             text eol=crlf
 
 
 # Binary files
-*.png    binary
-*.jpg    binary
-*.jpeg   binary
-*.gif    binary
-*.ico    binary
-*.pdf    binary
-*.zip    binary
-*.gz     binary
-*.woff   binary
-*.woff2  binary
+*.png             binary
+*.jpg             binary
+*.jpeg            binary
+*.gif             binary
+*.ico             binary
+*.pdf             binary
+*.zip             binary
+*.gz              binary
+*.woff            binary
+*.woff2           binary
