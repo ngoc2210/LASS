@@ -1,0 +1,35 @@
+# Always add text files with LF line endings
+*   text=auto
+
+# Basic Files
+*.editorconfig    text eol=lf
+*.gitattributes   text eol=lf
+*.gitignore       text eol=lf
+*.py              text eol=lf
+*.js              text eol=lf
+*.css             text eol=lf
+*.html            text eol=lf
+*.json            text eol=lf
+*.yml             text eol=lf
+*.yaml            text eol=lf
+*.md              text eol=lf
+
+# Script files
+*.sh     text eol=lf
+
+# Windows-only scripts
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+
+
+# Binary files
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.pdf    binary
+*.zip    binary
+*.gz     binary
+*.woff   binary
+*.woff2  binary
