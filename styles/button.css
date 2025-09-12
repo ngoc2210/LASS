@@ -1,0 +1,44 @@
+.start-button {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(135deg, #8EC5FC 0%, #E0C3FC 100%);
+    cursor: pointer;
+    outline: none;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(80, 80, 120, 0.15), 0 1.5px 4px rgba(80, 80, 120, 0.10);
+    transition:
+        transform 0.18s cubic-bezier(.4,2,.6,1),
+        box-shadow 0.18s cubic-bezier(.4,2,.6,1),
+        filter 0.18s;
+}
+
+.start-button:hover {
+    filter: blur(0.6px) brightness(0.97);
+    transform: scale(1.08);
+    box-shadow: 0 8px 24px rgba(80, 80, 120, 0.22), 0 2px 8px rgba(80, 80, 120, 0.13);
+}
+
+.start-button:active {
+    filter: blur(2px) brightness(0.93);
+    transform: scale(0.95);
+    box-shadow: 0 2px 8px rgba(80, 80, 120, 0.18), 0 1px 2px rgba(80, 80, 120, 0.10);
+}
+
+.start-icon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 200px) {
+    .start-button,
+    .start-icon {
+        width: 50px;
+        height: 50px;
+    }
+}

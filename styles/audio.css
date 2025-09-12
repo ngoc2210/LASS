@@ -1,0 +1,40 @@
+.audio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+}
+
+.audio {
+  row-gap: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .audio-container {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+    .audio {
+        row-gap: 10px;
+    }
+}
+
+.audio-container div {
+    font-size: 25px;
+}
+
+@media (max-width: 200px) {
+    .audio-container div {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 201px) and (max-width: 500px) {
+    .audio-container div {
+        font-size: 17px;
+    }
+}

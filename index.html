@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>LASS</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/button.css">
+        <link rel="stylesheet" href="styles/audio.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="title">Language-Queried Audio Sound Separation</h1>
+        </header>
+        <main>
+            <section class="config">
+                <div class="audio-input">
+                    <!-- <audio src="assets/audios/demo1.wav" controls></audio>
+                    <div>Original Audio</div> -->
+                </div>
+                <div class="text-input">
+                    <!-- <audio src="assets/audios/demo2.wav" controls></audio>
+                    <div>Result Audio</div> -->
+                </div>
+                <div class="model-input">
+                    <!-- <audio src="assets/audios/demo2.wav" controls></audio>
+                    <div>Result Audio</div>
+                </div> -->
+            </section>
+            <section class="audio-container">
+                <div class="audio">
+                    <audio src="assets/audios/demo1.wav" controls></audio>
+                    <div>Original Audio</div>
+                </div>
+                <div class="audio">
+                    <audio src="assets/audios/demo2.wav" controls></audio>
+                    <div>Result Audio</div>
+                </div>
+            </section>
+            <section class="start">
+                <button class="start-button">
+                    <img src="assets/icons/start-icon.svg" alt="Start" class="start-icon">
+                </button>
+            </section>
+        </main>
+    </body>
+</html>

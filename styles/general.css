@@ -1,0 +1,35 @@
+body {
+    /* This style below will be inherited */
+    font-family: Roboto, Arial;
+    background-image: url("../assets/images/background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 2fr 1fr 200px;
+    height: 100vh;
+    text-align: center;
+}
+
+.config,
+.audio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 200px) {
+    main {
+        grid-template-rows: 2fr 1fr 70px;
+    }
+}
+
+@media (min-width: 201px) and (max-width: 500px) {
+    main {
+        grid-template-rows: 2fr 1fr 100px;
+    }
+}
