@@ -5,11 +5,12 @@
 }
 
 .audio audio{
-    width: 70%;
+    width: 75%;
+    max-width: 500px;
     margin-bottom: 15px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .audio-container {
         grid-template-columns: 1fr;
     }

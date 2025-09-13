@@ -42,3 +42,11 @@
         height: 50px;
     }
 }
+
+@media (min-width: 201px) and (max-width: 500px) {
+    .start-button,
+    .start-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
