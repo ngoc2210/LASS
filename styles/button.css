@@ -35,6 +35,14 @@
     transform: translate(-50%, -50%);
 }
 
+@media (min-width: 201px) and (max-width: 500px) {
+    .start-button,
+    .start-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
 @media (max-width: 200px) {
     .start-button,
     .start-icon {
@@ -43,10 +51,3 @@
     }
 }
 
-@media (min-width: 201px) and (max-width: 500px) {
-    .start-button,
-    .start-icon {
-        width: 60px;
-        height: 60px;
-    }
-}

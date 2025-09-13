@@ -11,43 +11,38 @@
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/button.css">
         <link rel="stylesheet" href="styles/audio.css">
+        <link rel="stylesheet" href="styles/input.css">
+        <link rel="stylesheet" href="styles/model-input.css">
+        <link rel="stylesheet" href="styles/text-input.css">
     </head>
     <body>
-        <header>
-            <h1 class="title">Language-Queried Sound Separation</h1>
-        </header>
+        <h1 class="title">Language-Queried Sound Separation</h1>
         <main>
             <section class="input">
-                <!-- <div class="audio-input">
-                    <img class="hamburger-menu" src="assets/icons/hamburger-menu.svg">
-                    <img class="youtube-logo" src="assets/icons/youtube-logo.svg">
+                <div class="model-input">
+                    <label for="model">Choose Model</label>
+                    <select name="model" id="model" class="model-select">
+                        <option selected value="Rectified Flow Matching">Rectified Flow Matching</option>
+                        <option value="Model1">model1</option>
+                        <option value="Model2">model2</option>
+                    </select>
                 </div>
                 <div class="text-input">
-                    <input class="search-bar" type="text" placeholder="Search">
-                    <button class="search-button">
-                        <img class="search-icon" src="assets/icons/search.svg">
-                        <div class="tooltip">Search</div>
-                    </button> -->
-                    <!-- Put position absolute inside position relative -->
-                    <!-- <button class="voice-search-button">
-                        <img class="voice-search-icon" src="assets/icons/voice-search-icon.svg">
-                        <div class="tooltip">Search with your voice</div>
+                    <input class="text-input-bar" type="text" placeholder="Input Text">
+                    <button class="text-button">
+                        <img class="text-button-icon" src="assets/icons/text.png">
+                        <div class="tooltip">Input Text</div>
                     </button>
-                </div> -->
-                <!-- <div class="model-input">
-                    <div class="upload-icon-container">
-                        <img class="upload-icon" src="assets/icons/upload.svg">
-                        <div class="tooltip">Create</div>
-                    </div>
-                    <img class="youtube-apps-icon" src="assets/icons/youtube-apps.svg">
-                    <div class="notifications-icon-container">
-                        <img class="notifications-icon" src="assets/icons/notifications.svg">
-                        <div class="notifications-count">3</div>
-                    </div>
-                    <img class="current-user-picture" src="assets/images/my-channel.jpeg">-->
-                <!-- </div> -->
+                </div>
             </section>
-            <section class="audio-container">
+            <section class="audio-grid">
+                <div class="audio-input-item">
+                    <input type="file" id="fileInput" accept="audio/*" style="display:none">
+                    <button id="choose">🎵 Choose Audio</button>
+                </div>
+                <div class="audio-input-item">
+                    <button id="record">🎤 Record Audio</button>
+                </div>
                 <div class="audio">
                     <audio src="assets/audios/demo1.wav" controls></audio>
                     <div>Original Audio</div>
@@ -58,7 +53,7 @@
                 </div>
             </section>
             <section class="start">
-                <button class="start-button">
+                <button id="start-button" class="start-button">
                     <img src="assets/icons/start-icon.svg" alt="Start" class="start-icon">
                 </button>
             </section>
